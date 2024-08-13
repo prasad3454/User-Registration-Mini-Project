@@ -1,0 +1,30 @@
+server:
+  port: 9094
+spring:
+  application:
+    name: JRTP-UserRegistration-03
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Tara
+    url: jdbc:mysql://localhost:3306/userdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  
+  
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: taraprasadjena40@gmail.com
+    password: ktbt niae xqdw zhgt
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+          connectionTimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
